@@ -1,5 +1,6 @@
 //import { Stack } from './Stack'
 import {Chinabox} from './Chinabox'
+import {Queue} from './Queue'
 
 // const numberStack = new Stack<number>()
 // numberStack.push(1)
@@ -31,9 +32,18 @@ import {Chinabox} from './Chinabox'
 // console.log(stack.toArray()) //['1',1]
 // console.log(stack.toString()) // 1,1
 
-const box = new Chinabox()
-box.addZudaten({name: "Nudeln", gewicht: 80})
-box.addZudaten({name: "Sojasprossen", gewicht: 10})
-box.addZudaten({name: "Souce", gewicht: 5})
-box.addZudaten({name: "Hühnchen", gewicht: 15})
-box.displayZudaten()
+// const box = new Chinabox()
+// box.addZudaten({name: "Nudeln", gewicht: 80})
+// box.addZudaten({name: "Sojasprossen", gewicht: 10})
+// box.addZudaten({name: "Souce", gewicht: 5})
+// box.addZudaten({name: "Hühnchen", gewicht: 15})
+// box.displayZudaten()
+
+const queue = new Queue()
+queue.add("Person 1")
+queue.add("Person 2")
+queue.add("Person 3")
+console.log(queue.toString())
+console.log("Eine Person steigt aus")
+queue.get()
+console.log(queue.toString())
