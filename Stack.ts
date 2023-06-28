@@ -3,6 +3,7 @@ Class: Stack<T>
  */
 class Stack<T> {
     private stack: T[]
+
     constructor() {
         this.stack = []
     }
@@ -48,8 +49,9 @@ class Stack<T> {
 
     //gibt eine Zeichenfolge zurückzugeben,
     //die das angegebene Objekt darstellt
-    toString(): string{
+    toString(): string {
         return String(this.stack)
     }
 }
-export { Stack };
+
+export {Stack};

@@ -1,5 +1,5 @@
 //import { Stack } from './Stack'
-import { Chinabox } from './Chinabox'
+import {Chinabox} from './Chinabox'
 
 // const numberStack = new Stack<number>()
 // numberStack.push(1)

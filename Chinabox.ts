@@ -1,5 +1,6 @@
-import { Stack } from './Stack'
-import { Zudaten } from './Zudaten'
+import {Stack} from './Stack'
+import {Zudaten} from './Zudaten'
+
 class Chinabox {
     private zudatenlist: Stack<Zudaten>;
 
@@ -20,6 +21,6 @@ class Chinabox {
     }
 }
 
-export { Chinabox }
+export {Chinabox}
 
 
