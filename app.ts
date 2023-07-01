@@ -1,5 +1,5 @@
 //import { Stack } from './Stack'
-import {Chinabox} from './Chinabox'
+//import {Chinabox} from './Chinabox'
 import {Queue} from './Queue'
 
 // const numberStack = new Stack<number>()
@@ -40,10 +40,20 @@ import {Queue} from './Queue'
 // box.displayZudaten()
 
 const queue = new Queue()
-queue.add("Person 1")
-queue.add("Person 2")
-queue.add("Person 3")
-console.log(queue.toString())
+
+console.log("Einsteigen:")
+queue.add({name: "Maik", gewicht: 100})
+queue.add({name: "Alexander", gewicht: 70})
+queue.add({name: "Bärbel", gewicht: 55})
+console.log(queue.length())
+console.log(queue.toArray())
 console.log("Eine Person steigt aus")
 queue.get()
-console.log(queue.toString())
+console.log(queue.toArray())
+console.log("Eine Person steigt aus")
+queue.get()
+console.log(queue.toArray())
+queue.get()
+if (queue.isEmpty()) {
+    console.log('Der Fahrstuhl ist leer!')
+}
